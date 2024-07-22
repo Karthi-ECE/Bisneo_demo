@@ -255,3 +255,49 @@ footer ul li a:hover {
 .iconposition{
   margin-top: 80px;
 }
+.seperation {
+  display: flex;
+  margin-top: 100px;
+}
+
+.seperation_right {
+  flex: 0 0 37%; /* 40% width */
+  background-color: rgb(255, 255, 255);
+   /* Optional: for visual distinction */
+   padding: 10px;
+   /* justify-content: center;
+   align-items: center;
+   text-align: center; */
+}
+
+.seperation_left {
+  flex: 0 0 63%; /* 40% width */
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center;
+  text-align: center;  */
+}
+.tick-list {
+  list-style: none;
+  padding: 0;
+  margin-left: 219px;
+}
+
+.tick-list li {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.tick-symbol {
+  background-color: rgb(92, 70, 190);
+  color: rgb(255, 255, 255);
+  margin-right: 10px;
+  border-radius: 50%;
+  padding: 2px;
+}
