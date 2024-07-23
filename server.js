@@ -14,3 +14,23 @@ window.addEventListener('scroll', function() {
     
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const gridicons = document.querySelectorAll('.gridicon');
+
+    gridicons.forEach(function(gridicon) {
+        const hoverContent = gridicon.querySelector('.hover-content');
+
+        if (hoverContent) {
+            gridicon.addEventListener('click', function(event) {
+                event.stopPropagation(); // Prevent click event from bubbling up
+                hoverContent.style.display = 'block';
+            });
+
+            gridicon.addEventListener('mouseleave', function() {
+                hoverContent.style.display = 'none';
+            });
+        }
+    });
+});
+
